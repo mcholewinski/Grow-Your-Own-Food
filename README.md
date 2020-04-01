@@ -11,7 +11,7 @@
 - **Do podglądu aplikacji w telefonie (Android lub iOS):** https://expo.io/tools#client
 
 ### 2. Pierwsze pobranie i instalacja
-- **Zainstalować i skonfigurować Git **(Poradnik: [YouTube](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)) 
+- **Zainstalować i skonfigurować Git** (Poradnik: [YouTube](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)) 
 - **Uruchomić terminal w folderze do którego chcemy pobrać Projekt i wpisać komendę:**
 `git clone https://github.com/mcholewinski/Projekt.git`
 - **Otworzyć terminal w pobranym folderze i wpisać komendę:** `npm install`
