@@ -6,7 +6,7 @@
 - **[Android Studio](https://developer.android.com/studio "Android Studio")**
 	- Zainstalowane Android 10.0 SDK
 	- Utworzone AVD (wirtualne urządzenie) z zainstalowanym Androidem 10.0
-- **[Node.js LTS](https://nodejs.org/en/) **(przy instalacji zaznaczyć checkbox do zainstalowania dodatkowych narzędzi)
+- **[Node.js LTS](https://nodejs.org/en/)** (przy instalacji zaznaczyć checkbox do zainstalowania dodatkowych narzędzi)
 - **Expo CLI:** w terminalu wpisać komendę `npm install -g expo-cli`
 - **Do podglądu aplikacji w telefonie (Android lub iOS):** https://expo.io/tools#client
 
