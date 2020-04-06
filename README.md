@@ -1,5 +1,9 @@
 # Projekt
 
+<p align="center">
+  <img src="https://i.imgur.com/p3V2HrF.jpg" alt="Logo"/>
+</p>
+
 ## Przydatne kursy: [Kursy.md](Kursy.md)
 
 
