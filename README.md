@@ -1,6 +1,6 @@
 # Projekt
 
-# Przydatne kursy:[Kursy.md](Kursy.md)
+## Przydatne kursy: [Kursy.md](Kursy.md)
 
 
 ## Instrukcja:
