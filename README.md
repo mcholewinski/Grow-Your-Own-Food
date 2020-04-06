@@ -1,5 +1,14 @@
 # Projekt
 
+## Linki do kursów:
+- [JavaScript Crash Course](https://www.youtube.com/watch?v=hdI2bqOjy3c "Javascript")
+- [ReactJS Crash Course](https://youtu.be/sBws8MSXN7A "React.JS Crash Course")
+- [React Native for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ "React Native for Beginners")
+- [CSS Crash Course](https://www.youtube.com/watch?v=r1xBCi5SOjw "CSS Crash Course") (w React Native składnia jest delikatnie inna ale całe stylowanie aplikacji bazuje na CSS)
+
+
+
+## Instrukcja:
 ### 1. Rzeczy potrzebne do tworzenia/edycji projektu:
 - **[Git SCM](https://git-scm.com/downloads)**
 - **[Visual Studio Code](https://code.visualstudio.com/)**
