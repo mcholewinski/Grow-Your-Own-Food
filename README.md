@@ -4,6 +4,8 @@
   <img src="https://i.imgur.com/p3V2HrF.jpg" alt="Logo"/>
 </p>
 
+![GitHub last commit](https://img.shields.io/github/last-commit/mcholewinski/Projekt)
+
 ## Przydatne kursy: [Kursy.md](Kursy.md)
 
 
