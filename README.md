@@ -47,3 +47,25 @@ Branch na którym aktualnie jesteśmy będzie oznaczony gwiazdką.
 **III.** Po edycji projektu zmienione pliki trzeba dodać komendą `git add .`, zrobić commit komendą `git commit -m "wiadomosc co zmieniono"` a na koniec wysłać na github komendą `git push`.
 Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 
+### 4. Wstępna funkcjonalność aplikacji (za kilka dni dodam projekt z już gotowym tekstem, będziecie dokładniej wiedzieć o co chodzi)
+
+**1.**  Pierwsze uruchomienie aplikacji : Widok, z krótkim opisem celu aplikacji, przywitanie się z użytkownikiem 
+
+**2.**  Widok “Moje rośliny” - Jeśli użytkownik nie dodał jeszcze żadnych roślin, aplikacja zachęci do ich wybrania, jeśli użytkownik posiada już jakieś rośliny pkt. 5. 
+
+
+**3.** "Sklep"
+- Dostępne będą 2 lub 3 pakiety startowe.
+- Możliwe będzie filtrowanie roślin w zależności od tego gdzie się mieszka (dom/mieszkanie z balkonem/mieszkanie bez balkonu).
+- Rośliny będą wyświetlać się wg pory roku.
+- Po naciśnięciu w każdą roślinę pojawi się widok z jej opisem. 
+- Kalkulator na dole będzie szacował ile około wyniesie uprawa wybranych roślin (wliczając w to ziemię, zakup nasion/sadzonek, doniczek) oraz ile miejsca będzie potrzebne. 
+
+**4.** Po personalizacji podsumowanie wybranych roślin, możliwa integracja z allegro lub w późniejszym etapie z jakimś sklepem.
+
+**5.** Widok “Moje rośliny” już po zasadzeniu roślin.
+- Możliwość rzucenia wyzwania znajomemu, przekierowanie do wysłania wiadomości (messenger, SMS itp..) 
+- Po naciśnięciu w konkretną roślinę pojawi się widok z opisem, zaleceniami itp. Będzie się on zmienił zależnie od etapu (1 etap - zakup (polecane doniczki) , 2 - wysiewanie (instrukcja) , 3 - pielęgnacja (instrukcja)
+
+
+
