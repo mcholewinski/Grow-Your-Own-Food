@@ -4,7 +4,7 @@
   <img src="https://i.imgur.com/p3V2HrF.jpg" alt="Logo"/>
 </p>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/mcholewinski/Projekt)
+![](https://img.shields.io/github/last-commit/mcholewinski/Projekt)
 
 ## Przydatne kursy: [Kursy.md](Kursy.md)
 
@@ -47,7 +47,7 @@ Branch na którym aktualnie jesteśmy będzie oznaczony gwiazdką.
 **III.** Po edycji projektu zmienione pliki trzeba dodać komendą `git add .`, zrobić commit komendą `git commit -m "wiadomosc co zmieniono"` a na koniec wysłać na github komendą `git push`.
 Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 
-### 4. Wstępna funkcjonalność aplikacji (za kilka dni dodam projekt z już gotowym tekstem, będziecie dokładniej wiedzieć o co chodzi)
+## Wstępna funkcjonalność aplikacji (za kilka dni dodam projekt z już gotowym tekstem, będziecie dokładniej wiedzieć o co chodzi)
 **I.**
   **1.**  Pierwsze uruchomienie aplikacji : Widok, z krótkim opisem celu aplikacji, przywitanie się z użytkownikiem 
 
