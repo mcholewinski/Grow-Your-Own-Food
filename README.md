@@ -75,5 +75,8 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 - Przesadzanie 
 - Zbiory 
 
+## Baza roślin info
+https://docs.google.com/spreadsheets/d/1zZa1Zu7A82l9g2SF-jlQhhqfuzLAzabkVMhRmIC4EIo/edit?usp=sharing
+
 
 
