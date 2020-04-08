@@ -10,6 +10,8 @@
 
 
 ## Instrukcja:
+<details>
+	
 ### 1. Rzeczy potrzebne do tworzenia/edycji projektu:
 - **[Git SCM](https://git-scm.com/downloads)**
 - **[Visual Studio Code](https://code.visualstudio.com/)**
@@ -46,6 +48,8 @@ Branch na którym aktualnie jesteśmy będzie oznaczony gwiazdką.
 
 **III.** Po edycji projektu zmienione pliki trzeba dodać komendą `git add .`, zrobić commit komendą `git commit -m "wiadomosc co zmieniono"` a na koniec wysłać na github komendą `git push`.
 Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
+</details>
+
 
 ## Wstępna funkcjonalność aplikacji (za kilka dni dodam projekt z już gotowym tekstem, będziecie dokładniej wiedzieć o co chodzi)
 **I.**
