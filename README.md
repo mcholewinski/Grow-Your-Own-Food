@@ -10,6 +10,7 @@
 
 
 ## Instrukcja:
+<summary>Rozwiń instrukcje: (trzeba kliknac trojkat)</summary>
 <details>
 	
 ### 1. Rzeczy potrzebne do tworzenia/edycji projektu:
