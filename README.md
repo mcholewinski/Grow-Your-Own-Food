@@ -12,6 +12,7 @@
 ## Instrukcja:
 <details>
 <summary>Kliknij aby rozwinąć</summary>
+	
 ### 1. Rzeczy potrzebne do tworzenia/edycji projektu:
 - **[Git SCM](https://git-scm.com/downloads)**
 - **[Visual Studio Code](https://code.visualstudio.com/)**
