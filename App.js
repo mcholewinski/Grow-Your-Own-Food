@@ -1,26 +1,26 @@
 import "react-native-gesture-handler";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import React, { useState } from "react";
+import * as Font from "expo-font";
+import Home from "./screens/Home";
+import { AppLoading } from "expo";
+import Navigator from "./routes/homeStack";
 
-const Stack = createStackNavigator();
+const getFonts = () =>
+  Font.loadAsync({
+    "lato-regular": require("./assets/fonts/Lato-Regular.ttf"),
+    "lato-bold": require("./assets/fonts/Lato-Bold.ttf"),
+    "lato-light": require("./assets/fonts/Lato-Light.ttf"),
+    "lato-black": require("./assets/fonts/Lato-Black.ttf"),
+  });
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Projekcik Test</Text>
-      </View>
-    </NavigationContainer>
-  );
-}
+  const [fontsLoaded, setFontsLoaded] = useState(false);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+  if (fontsLoaded) {
+    return <Navigator />;
+  } else {
+    return (
+      <AppLoading startAsync={getFonts} onFinish={() => setFontsLoaded(true)} />
+    );
+  }
+}
