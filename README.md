@@ -52,7 +52,7 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 </details>
 
 
-## Wstępna funkcjonalność aplikacji (za kilka dni dodam projekt z już gotowym tekstem, będziecie dokładniej wiedzieć o co chodzi)
+## Wstępna funkcjonalność aplikacji
 **I.**
   **1.**  Pierwsze uruchomienie aplikacji : Widok, z krótkim opisem celu aplikacji, przywitanie się z użytkownikiem 
 
@@ -72,7 +72,7 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 - Możliwość rzucenia wyzwania znajomemu, przekierowanie do wysłania wiadomości (messenger, SMS itp..) 
 - Po naciśnięciu w konkretną roślinę pojawi się widok z opisem, zaleceniami itp. Będzie się on zmienił zależnie od etapu (1 etap - zakup (polecane doniczki) , 2 - wysiewanie (instrukcja) , 3 - pielęgnacja (instrukcja)
 
-**II. Powiadomienia : **
+**II. Powiadomienia:**
 - Przypomnienie o podlewaniu 
 - Rzuć wyzwanie 
 - Rozpoczął się czas wysiewu x…
