@@ -83,5 +83,6 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 ## Baza roślin info
 https://docs.google.com/spreadsheets/d/1zZa1Zu7A82l9g2SF-jlQhhqfuzLAzabkVMhRmIC4EIo/edit?usp=sharing
 
-
+## Program do dodawania roślin do bazy danych
+https://drive.google.com/file/d/1IXuoY3Rog-L4sbcG864qsd5osBEc5a5x/view?usp=sharing
 
