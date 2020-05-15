@@ -4,7 +4,6 @@
   <img src="https://i.imgur.com/p3V2HrF.jpg" alt="Logo"/>
 </p>
 
-![](https://img.shields.io/github/last-commit/mcholewinski/Projekt)
 
 ## Przydatne kursy: [Kursy.md](Kursy.md)
 
@@ -82,7 +81,4 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 
 ## Baza roślin info
 https://docs.google.com/spreadsheets/d/1zZa1Zu7A82l9g2SF-jlQhhqfuzLAzabkVMhRmIC4EIo/edit?usp=sharing
-
-## Program do dodawania roślin do bazy danych
-https://drive.google.com/file/d/1IXuoY3Rog-L4sbcG864qsd5osBEc5a5x/view?usp=sharing
 
