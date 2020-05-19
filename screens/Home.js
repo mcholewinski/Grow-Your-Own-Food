@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View, SafeAreaView, Text, FlatList } from "react-native";
+import { TouchableOpacity, Button } from 'react-native'
+import { StyleSheet, View, onPress, Image, SafeAreaView, Text, FlatList, ScrollView, Surface, ImageBackground } from "react-native";
 import { globalStyles } from "../styles/global";
 
 const debugData = [
@@ -36,27 +37,44 @@ function ListItem({ title, paragraph }) {
 
 export default function Home() {
   return (
+
+    // state 2 
     <View style={globalStyles.container}>
-      <View style={styles.challengeBanner}>
-        <View style={styles.challengeBannerImg}></View>
-        <View style={styles.challengeBannerInfo}>
-          <Text style={styles.challengeBannerTextTitle}>Challenge</Text>
-          <Text style={styles.challengeBannerTextParagraph}>
-            Challenge Information
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={styles.challengeBanner}>
+          <View style={styles.challengeBannerImg}></View>
+          <View style={styles.challengeBannerInfo}>
+            <Text style={styles.challengeBannerTextTitle}>Challenge</Text>
+            <Text style={styles.challengeBannerTextParagraph}>
+              Challenge Information
           </Text>
+          </View>
         </View>
-      </View>
-      <Text style={globalStyles.titleText}>Moje rośliny</Text>
-      <SafeAreaView style={styles.menu}>
-        <FlatList
-          data={debugData}
-          renderItem={({ item }) => (
-            <ListItem title={item.title} paragraph={item.paragraph} />
-          )}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
+        <Text style={styles.titleStyle}>Moje rośliny</Text>
+        <SafeAreaView style={styles.menu}>
+          <FlatList
+            data={debugData}
+            renderItem={({ item }) => (
+              <ListItem title={item.title} paragraph={item.paragraph} />
+            )}
+            keyExtractor={(item) => item.id}
+            numColumns={2}
+          />
+        </SafeAreaView>
+
+        <View style={styles.bottom}>
+          <TouchableOpacity onPress={onPress}>
+            <Image
+              source={require('../assets/plantButton.png')}
+              style={styles.plantIconButton} />
+          </TouchableOpacity>
+        </View>
+
+
+        <Button style={styles.findPlantsButton}
+          title="Znajdź rośliny dla siebie"
         />
-      </SafeAreaView>
+      </ScrollView>
     </View>
   );
 }
@@ -87,13 +105,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 24,
     color: "gold",
-    fontFamily: "lato-black",
+    fontFamily: "inter-medium",
   },
   challengeBannerTextParagraph: {
     textAlign: "center",
     fontSize: 12,
     color: "white",
-    fontFamily: "lato-bold",
+    fontFamily: "inter-regular",
   },
   listItem: {
     backgroundColor: "grey",
@@ -109,9 +127,28 @@ const styles = StyleSheet.create({
   listItemTitle: {
     textAlign: "left",
     marginTop: 180,
-    fontSize: 24,
+    fontSize: 16,
   },
   listItemParagraph: {
-    fontSize: 14,
+    fontSize: 15,
   },
+  plantIconButton: {
+    marginTop: 20
+  },
+  bottom: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: 36
+  },
+  titleStyle: {
+    fontSize: 32,
+    marginTop: 14
+  },
+  findPlantsButton: {
+    backgroundColor: "grey",
+    color: 'white',
+    width: 282,
+    height: 52
+
+  }
 });

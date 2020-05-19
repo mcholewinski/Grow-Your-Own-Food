@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Home";
 import PlantDetails from "../screens/PlantDetails";
-
 const Stack = createStackNavigator();
 
 export default Navigator = () => {
