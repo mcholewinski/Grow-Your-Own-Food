@@ -11,7 +11,9 @@ export default class LoadingScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Loading...</Text>
+        <Text style={{ fontSize: 16, fontFamily: "inter-medium" }}>
+          Ładowanie...
+        </Text>
         <ActivityIndicator size="large"></ActivityIndicator>
       </View>
     );
