@@ -21,8 +21,8 @@ const getFonts = () =>
   Font.loadAsync({
     "inter-bold": require("./assets/fonts/Inter-Bold.ttf"),
     "inter-regular": require("./assets/fonts/Inter-Regular.ttf"),
-    "inter-semiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
     "inter-medium": require("./assets/fonts/Inter-Medium.ttf"),
+    "inter-semiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
   });
 
 export default function App() {
