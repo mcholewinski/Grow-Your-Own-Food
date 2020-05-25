@@ -6,7 +6,10 @@ import { AppLoading } from "expo";
 import Navigator from "./routes/homeStack";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from "@react-navigation/stack";
+import Home from "./screens/Home";
+import PlantDetails from "./screens/PlantDetails";
 
+//const Stack = createStackNavigator() ;
 
 {/*
 const getFonts = () =>
@@ -17,6 +20,8 @@ const getFonts = () =>
     "lato-black": require("./assets/fonts/Lato-Black.ttf"),
   });*/}
 
+
+
   const getFonts = () =>
   Font.loadAsync({
     "inter-bold": require("./assets/fonts/Inter-Bold.ttf"),
@@ -26,10 +31,19 @@ const getFonts = () =>
   });
 
 export default function App() {
+  
+  //createHomeStack = () =>
+  {/*
+  <Stack.Navigator>
+    <Stack.Screen name="Home" component={Home} />
+   <Stack.Screen name="PlantDetails" component={PlantDetails} />
+  </Stack.Navigator>
+  */}
+
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   if (fontsLoaded) {
-    return <Navigator />;
+    return  <Navigator />;
   } else {
     return (
 

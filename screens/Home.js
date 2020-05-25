@@ -4,7 +4,6 @@ import { globalStyles } from "../styles/global";
 
 import FlatButton from '../shared/GreenButton.js';
 
-
 const debugData = [
   {
     id: "1",
@@ -37,11 +36,12 @@ function ListItem({ title, paragraph }) {
   );
 }
 
+
 function HomeScreen({ navigation }) {
   return (
     <View>
       <FlatButton text='Znajdź rośliny dla siebie!'
-        onPress={() => navigation.navigate('PlantDetails')}
+        onPress={() => navigation.navigate('Marketplace')}
       />
     </View>
   );
@@ -49,47 +49,46 @@ function HomeScreen({ navigation }) {
 
 export default function Home() {
   return (
-    <View style={{ flex: 1 }}>
+<View style={{ flex: 1 }}>
 
-  <ScrollView showsVerticalScrollIndicator={false}>
-    <View style={globalStyles.container}>
-      <View style={styles.challengeBanner}>
-        <View style={styles.challengeBannerImg}></View>
-        <View style={styles.challengeBannerInfo}>
-          <Text style={styles.challengeBannerTextTitle}>Challenge</Text>
-          <Text style={styles.challengeBannerTextParagraph}>
-            Challenge Information
-          </Text>
-        </View>
+<ScrollView showsVerticalScrollIndicator={false}>
+  <View style={globalStyles.container}>
+    <View style={styles.challengeBanner}>
+      <View style={styles.challengeBannerImg}></View>
+      <View style={styles.challengeBannerInfo}>
+        <Text style={styles.challengeBannerTextTitle}>Challenge</Text>
+        <Text style={styles.challengeBannerTextParagraph}>
+          Challenge Information
+        </Text>
       </View>
-      <Text style={globalStyles.titleText}>Moje rośliny</Text>
-      <SafeAreaView style={styles.menu}>
-        <FlatList
-          data={debugData}
-          renderItem={({ item }) => (
-            <ListItem title={item.title} paragraph={item.itemParagraph} />
-          )}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
-        />
-      </SafeAreaView>
-
-    
-
     </View>
-  </ScrollView >
-
-  <View style={globalStyles.TouchableOpacityStyle}>
-    <TouchableOpacity onPress={onPress}
-    >
-      <Image
-        source={require('../assets/buttonIcons/seedlingFAB2.png')}
-        style={globalStyles.seedlingFAB} />
-    </TouchableOpacity>
+    <Text style={globalStyles.titleText}>Moje rośliny</Text>
+    <SafeAreaView style={styles.menu}>
+      <FlatList
+        data={debugData}
+        renderItem={({ item }) => (
+          <ListItem title={item.title} paragraph={item.itemParagraph} />
+        )}
+        keyExtractor={(item) => item.id}
+        numColumns={2}
+      />
+    </SafeAreaView>
   </View>
+</ScrollView >
+
+<View style={globalStyles.TouchableOpacityStyle}>
+  <TouchableOpacity onPress={onPress}
+  >
+    <Image
+      source={require('../assets/buttonIcons/seedlingFAB2.png')}
+      style={globalStyles.seedlingFAB} 
+     //onPress={() => navigation.navigate('PlantDetails')}
+      />
+  </TouchableOpacity>
+</View>
 </View>
   );
-  }
+}
 
 const styles = StyleSheet.create({
   challengeBanner: {
@@ -140,6 +139,7 @@ const styles = StyleSheet.create({
   listItemTitle: {
     textAlign: "left",
     fontFamily: 'inter-semiBold',
+    lineHeight: 24,
     marginTop: 180,
     fontSize: 16,
   },
