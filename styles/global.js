@@ -48,6 +48,7 @@ export const globalStyles = StyleSheet.create({
   seedlingFAB: {
     height: 56,
     width: 56,
+    paddingBottom: 41,
   },
   SetPic: {
     alignSelf: "center",

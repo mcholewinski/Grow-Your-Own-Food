@@ -3,8 +3,7 @@ import { StyleSheet, TouchableOpacity, View, Button, onPress, Image, SafeAreaVie
 import { globalStyles } from "../styles/global";
 
 import FlatButton from '../shared/GreenButton.js';
-import FlatButton2 from '../shared/SalmonButton.js';
-import FlatButton3 from '../shared/LightGreenButton.js';
+
 
 const debugData = [
   {
@@ -29,25 +28,6 @@ const debugData = [
   },
 ];
 
-const Herbs = [
-  {
-    name: 'Bazylia',
-    picture: '../assets/zestawZioła.jpg',
-  },
-  {
-    name: 'Bazylia',
-    picture: '../assets/zestawZioła.jpg',
-  },
-  {
-    name: 'Bazylia',
-    picture: '../assets/zestawZioła.jpg',
-  },
-  {
-    name: 'Bazylia',
-    picture: '../assets/zestawZioła.jpg',
-  },
-]
-
 function ListItem({ title, paragraph }) {
   return (
     <View style={styles.listItem}>
@@ -57,7 +37,6 @@ function ListItem({ title, paragraph }) {
   );
 }
 
-//export default class??
 function HomeScreen({ navigation }) {
   return (
     <View>
@@ -95,11 +74,8 @@ export default function Home() {
         />
       </SafeAreaView>
 
-      <FlatButton onPress={onPress} text='Znajdź rośliny dla siebie!' />
-      {/*}
-          <FlatButton3 onPress={onPress} text='Rośliny zmieszczą się na oknie' />
-          <FlatButton2 onPress={onPress} text='Wybierz zestaw' />
-              */}
+    
+
     </View>
   </ScrollView >
 
@@ -156,7 +132,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     marginHorizontal: 16,
-    marginVertical: 30,
+    marginVertical: 40,
     borderRadius: 10,
     width: 149,
     height: 130,
