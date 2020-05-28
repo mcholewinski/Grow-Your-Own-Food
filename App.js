@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
-import { createAppContainer, createSwitchNavigator } from "react-navigation";
+import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import LoadingScreen from "./screens/LoadingScreen";
 import LoginScreen from "./screens/LoginScreen";
