@@ -1,54 +1,24 @@
 import React, { Component, useState } from "react";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
-<<<<<<< HEAD
-import Navigator from "./routes/homeStack";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-
-const getFonts = () =>
-  Font.loadAsync({
-    "inter-bold": require("./assets/fonts/Inter-Bold.ttf"),
-    "inter-regular": require("./assets/fonts/Inter-Regular.ttf"),
-    "inter-medium": require("./assets/fonts/Inter-Medium.ttf"),
-    "inter-semiBold": require("./assets/fonts/Inter-SemiBold.ttf"),
-  });
-
-export default function App() {
-  const [fontsLoaded, setFontsLoaded] = useState(false);
-
-  if (fontsLoaded) {
-    return <Navigator />;
-  } else {
-    return (
-      <AppLoading startAsync={getFonts} onFinish={() => setFontsLoaded(true)} />
-    );
-=======
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import LoadingScreen from "./screens/LoadingScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
+import Marketplace from "./screens/Marketplace";
+import HerbSetDetails from "./screens/HerbSetDetails";
+import VegsHerbSetDetails from "./screens/VegsHerbSetDetails";
 
-import * as firebase from "firebase";
-
-var firebaseConfig = {
-  apiKey: "AIzaSyDDd7ZauEpElRkPj7Y385zVf_Fbaw_oyY4",
-  authDomain: "projekt-1ef78.firebaseapp.com",
-  databaseURL: "https://projekt-1ef78.firebaseio.com",
-  projectId: "projekt-1ef78",
-  storageBucket: "projekt-1ef78.appspot.com",
-  messagingSenderId: "855434626189",
-  appId: "1:855434626189:web:2e49e0487356dd48f54ec4",
-  measurementId: "G-RPP18E2F81",
-};
-// Initialize Firebase
-!firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+import firebaseApp from "./firebaseConfig";
 
 const AppStack = createStackNavigator(
   {
     Home: HomeScreen,
+    Market: Marketplace,
+    HerbSet: HerbSetDetails,
+    VegsHerbSet: VegsHerbSetDetails,
   },
   {
     defaultNavigationOptions: {
@@ -114,6 +84,5 @@ export default class App extends Component {
     if (!this.state.loaded) {
       return <AppLoading />;
     } else if (this._isMounted) return <AppContainer />;
->>>>>>> master
   }
 }
