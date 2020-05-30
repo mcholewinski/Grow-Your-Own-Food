@@ -12,8 +12,27 @@ import {
 import { globalStyles } from "../styles/global";
 import FlatButton2 from "../shared/SalmonButton.js";
 import PlantsList from "../screens/components/PlantsList";
+import { NavigationEvents } from "react-navigation";
+import firebase from "firebase";
+import "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDDd7ZauEpElRkPj7Y385zVf_Fbaw_oyY4",
+  authDomain: "projekt-1ef78.firebaseapp.com",
+  databaseURL: "https://projekt-1ef78.firebaseio.com",
+  projectId: "projekt-1ef78",
+  storageBucket: "projekt-1ef78.appspot.com",
+  messagingSenderId: "855434626189",
+  appId: "1:855434626189:web:2e49e0487356dd48f54ec4",
+  measurementId: "G-RPP18E2F81",
+};
 
 export default class MarketPlace extends Component {
+  state = {
+    herbs: [],
+    vegs: [],
+  };
+
   backAction = () => {
     Alert.alert(
       "Uwaga!",
@@ -38,6 +57,26 @@ export default class MarketPlace extends Component {
       "hardwareBackPress",
       this.backAction
     );
+
+    const firebaseApp = !firebase.apps.length
+      ? firebase.initializeApp(firebaseConfig)
+      : firebase.app();
+
+    var db = firebaseApp.firestore();
+    const docRef = db.collection("zioła").doc("rukola");
+
+    docRef
+      .get()
+      .then(function (doc) {
+        if (doc.exists) {
+          console.log(doc.data());
+        } else {
+          console.log("Blad dokumentu");
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
   componentWillUnmount() {
