@@ -82,3 +82,6 @@ Wiadomości o zmianach powinny mieć format "add/remove/update/itp. nazwaPliku"
 ## Baza roślin info
 https://docs.google.com/spreadsheets/d/1zZa1Zu7A82l9g2SF-jlQhhqfuzLAzabkVMhRmIC4EIo/edit?usp=sharing
 
+### Wizualna prezentacja projektu UI
+https://www.figma.com/file/NPqujldlvu5a1tK1ieJU8u/Grow-Your-Own-Food-App?node-id=0%3A1
+
