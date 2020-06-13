@@ -9,44 +9,7 @@ import {
 } from "react-native";
 import FlatButton from "../shared/GreenButton.js";
 
-import * as firebase from "firebase";
-
 export default class Home extends Component {
-  state = {
-    email: "",
-    displayName: "",
-  };
-
-  unsubscribeUserAuthStateChangedListener = null;
-
-  componentDidMount() {
-    this.unsubscribeUserAuthStateChangedListener = firebase
-      .auth()
-      .onAuthStateChanged((authenticate) => {
-        if (authenticate) {
-          this.setState({
-            email: authenticate.email,
-            displayName: authenticate.displayName,
-          });
-        } else {
-          this.props.navigation.navigate("Login");
-        }
-      });
-  }
-
-  componentWillUnmount() {
-    if (this.unsubscribeUserAuthStateChangedListener) {
-      this.unsubscribeUserAuthStateChangedListener();
-    }
-  }
-
-  signOutUser = () => {
-    firebase
-      .auth()
-      .signOut()
-      .catch((error) => alert(error.message));
-  };
-
   render() {
     LayoutAnimation.easeInEaseOut();
     return (
@@ -58,9 +21,6 @@ export default class Home extends Component {
           marginHorizontal: 24,
         }}
       >
-        <TouchableOpacity onPress={this.signOutUser}>
-          <Text>Wyloguj</Text>
-        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate("Market")}
           style={{

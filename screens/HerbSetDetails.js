@@ -36,11 +36,13 @@ export default class HerbSetDetails extends Component {
               </Text>
             </View>
             <View>
-              <Text style={globalStyles.descriptionText}>OPIS OPIS</Text>
+              <Text style={globalStyles.descriptionText}>
+                Wybrane zioła zostaną automatycznie dodane do ekranu głównego.
+              </Text>
             </View>
             <View style={{ flex: 1, paddingTop: 26 }}>
               <Text style={globalStyles.subtitleText}>
-                Proponujemy następujący zestaw :{" "}
+                Wybierz interesujące Cię zioła:{" "}
               </Text>
             </View>
             <View></View>

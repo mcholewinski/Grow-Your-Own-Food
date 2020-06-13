@@ -34,15 +34,17 @@ export default class VegsHerbsSetDetails extends Component {
             </View>
             <View style={{ flex: 1, paddingBottom: 16, paddingTop: 24 }}>
               <Text style={globalStyles.titleText}>
-                Zioła i warzywa dla początkujących
+                Warzywa dla początkujących
               </Text>
             </View>
             <View>
-              <Text style={globalStyles.descriptionText}>OPIS OPIS</Text>
+              <Text style={globalStyles.descriptionText}>
+                Wybrane rośliny zostaną automatycznie dodane do ekranu głównego.
+              </Text>
             </View>
             <View style={{ flex: 1, paddingTop: 26 }}>
               <Text style={globalStyles.subtitleText}>
-                Proponujemy następujący zestaw :{" "}
+                Wybierz interesujące Cię warzywa:{" "}
               </Text>
             </View>
 
@@ -67,7 +69,7 @@ export default class VegsHerbsSetDetails extends Component {
           </View>
 
           <View style={{ flex: 1, paddingBottom: 22 }}>
-            <FlatButton2 onPress={onPress} text="Wybierz zestaw" />
+            <FlatButton2 onPress={onPress} text="Dodaj" />
           </View>
         </ScrollView>
       </View>
