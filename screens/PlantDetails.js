@@ -2,74 +2,109 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
-  Button,
-  onPress,
   Image,
-  SafeAreaView,
   Text,
-  FlatList,
   ScrollView,
 } from "react-native";
 import { globalStyles } from "../styles/global";
+import React, { Component } from "react";
+import Timeline from "react-native-timeline-flatlist";
+import images from "../assets/imageList";
 
-import { Card } from "native-base";
-import PlantsStateCard from "./components/PlantsStateCard";
-
-export default function PlantDetails() {
-  return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <View>
-        <View>
-          <Image
-            source={require("../assets/zestawZiołaWarzywa.jpg")}
-            style={{ height: 223, width: null }}
-          />
-        </View>
-        <View>
-          <TouchableOpacity>
+export default class PlantDetails extends Component {
+  render() {
+    const { navigation } = this.props;
+    let data = [
+      {
+        title: "Wysiewanie",
+        description:
+          navigation.getParam("terminSiewu1") +
+          " - " +
+          navigation.getParam("terminSiewu2"),
+      },
+      {
+        title: "Przesadzanie",
+        description: "Gdy sadzonka będzie miała ok 10cm",
+      },
+      { title: "Nawożenie", description: "Co 6 tygodni" },
+      {
+        title: "Zbiory!",
+        description:
+          navigation.getParam("terminZbioru1") +
+          " - " +
+          navigation.getParam("terminZbioru2"),
+      },
+    ];
+    return (
+      <View style={{ flex: 1 }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View>
             <Image
-              style={{ height: 29, width: 45, left: 24, top: 37 }}
-              source={require("../assets/buttonIcons/backButton.png")}
+              style={{ flex: 1, height: 223 }}
+              source={images[navigation.getParam("id")]}
             />
-          </TouchableOpacity>
-        </View>
-        <View style={{ paddingTop: 52 }}>
-          <Text style={globalStyles.titleText}> Bazylia</Text>
-        </View>
-        <View style={{ paddingTop: 12 }}>
-          <Text style={styles.plantDescription}>
-            Bazylia jest bardzo łatwą w uprawie rośliną jednoroczną. Jej liście
-            można zbierać cały rok, należy je zrywać u spodu rośliny
-          </Text>
-        </View>
+          </View>
+          <View style={{ flex: 1, padding: 20 }}>
+            <View style={{ flex: 1, paddingLeft: 20, paddingTop: 20 }}>
+              <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
+                <Image
+                  style={{ height: 29, width: 45 }}
+                  source={require("../assets/buttonIcons/backButton.png")}
+                />
+              </TouchableOpacity>
+            </View>
+            <View>
+              <Text style={globalStyles.titleText}>
+                {navigation.getParam("nazwa")}
+              </Text>
+            </View>
+            <View>
+              <Text style={globalStyles.descriptionText}>
+                {navigation.getParam("opis")}
+              </Text>
+            </View>
 
-        <View style={{ paddingTop: 18 }}>
-          <Card>
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 1"
-              state="Wysiano, zbiory za ok. 20 dni"
-            />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 2"
-              state="Wysiano"
-            />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 3"
-              state="Niewysiano"
-            />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 4"
-              state="Wysiano"
-            />
-          </Card>
-        </View>
+            <View>
+              <Text style={globalStyles.descriptionText}>
+                Stanowisko:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("stanowisko") + "\n"}
+                </Text>
+                Podlewanie:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("podlewanie1") +
+                    "x w tyg, " +
+                    "latem " +
+                    navigation.getParam("podlewanie2") +
+                    "x \n"}
+                </Text>
+                Iluletnia:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("iluLetnia") + "\n"}
+                </Text>
+                Doniczka:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("doniczka") + "\n"}
+                </Text>
+              </Text>
+            </View>
+
+            <View style={{ paddingTop: 12 }}>
+              {
+                <Timeline
+                  data={data}
+                  showTime={false}
+                  circleSize={10}
+                  circleColor="#00513D"
+                  lineColor="#00513D"
+                />
+              }
+            </View>
+          </View>
+        </ScrollView>
       </View>
-    </ScrollView>
-  );
+    );
+  }
 }
 
 const styles = StyleSheet.create({

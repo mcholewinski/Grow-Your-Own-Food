@@ -9,6 +9,9 @@ export const globalStyles = StyleSheet.create({
   },
   titleText: {
     paddingLeft: 25,
+    flex: 1, 
+    paddingBottom: 16, 
+    paddingTop: 24 ,
     // paddingRight: 52,
     fontFamily: "inter-medium",
     fontSize: 32,
@@ -27,7 +30,8 @@ export const globalStyles = StyleSheet.create({
     fontFamily: "inter-regular",
     fontSize: 16,
     paddingLeft: 25,
-    paddingRight: 123,
+    paddingTop:24 ,
+    //paddingRight: 123,
     //padding: 16,
   },
   subtitleText: {
@@ -48,13 +52,6 @@ export const globalStyles = StyleSheet.create({
   seedlingFAB: {
     height: 56,
     width: 56,
-  },
-  SetPic: {
-    alignSelf: "center",
-    height: 174,
-    width: 324,
-    paddingLeft: 25,
-    //padding:13,
   },
   TouchableOpacityStyle: {
     position: "absolute",
