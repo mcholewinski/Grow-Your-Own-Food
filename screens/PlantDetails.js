@@ -2,38 +2,46 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
-  Button,
-  onPress,
   Image,
-  SafeAreaView,
   Text,
-  FlatList,
   ScrollView,
 } from "react-native";
 import { globalStyles } from "../styles/global";
-import { Component } from "react";
-import Timeline from "react-native-timeline-flatlist" ;
+import React, { Component } from "react";
+import Timeline from "react-native-timeline-flatlist";
+import images from "../assets/imageList";
 
-
-export default class PlantDetail extends Component() {
-  constructor(){
-    super()
-    this.data = [
-      {title: 'Wysiewanie', description: 'Event 1 Description'},
-      {title: 'Przesadzanie', description: 'Event 2 Description'},
-      {title: 'Nawożenie', description: 'Event 3 Description'},
-      {title: 'Zbiory!', description: 'Event 4 Description'},
-    ]
-  }
+export default class PlantDetails extends Component {
   render() {
+    const { navigation } = this.props;
+    let data = [
+      {
+        title: "Wysiewanie",
+        description:
+          navigation.getParam("terminSiewu1") +
+          " - " +
+          navigation.getParam("terminSiewu2"),
+      },
+      {
+        title: "Przesadzanie",
+        description: "Gdy sadzonka będzie miała ok 10cm",
+      },
+      { title: "Nawożenie", description: "Co 6 tygodni" },
+      {
+        title: "Zbiory!",
+        description:
+          navigation.getParam("terminZbioru1") +
+          " - " +
+          navigation.getParam("terminZbioru2"),
+      },
+    ];
     return (
       <View style={{ flex: 1 }}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View>
             <Image
               style={{ flex: 1, height: 223 }}
-              source={require("../assets/zestawZiołaWarzywa.jpg")}
-
+              source={images[navigation.getParam("id")]}
             />
           </View>
           <View style={{ flex: 1, padding: 20 }}>
@@ -47,44 +55,57 @@ export default class PlantDetail extends Component() {
             </View>
             <View>
               <Text style={globalStyles.titleText}>
-                Bazylia
-                </Text>
+                {navigation.getParam("nazwa")}
+              </Text>
             </View>
             <View>
               <Text style={globalStyles.descriptionText}>
-                OPIS ROŚLINY
-                </Text>
+                {navigation.getParam("opis")}
+              </Text>
             </View>
 
             <View>
-              <Text style={globalStyles.descriptionText}> 
-              Gdzie:       {"\n"}
-              Stanowisko:  {"\n"}
-              Podlewanie:  {"\n"} {/* pogrubiony tekst */}
-              Iluletnia:   {"\n"}
-              Doniczka:     {"\n"}
-              </Text> 
+              <Text style={globalStyles.descriptionText}>
+                Stanowisko:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("stanowisko") + "\n"}
+                </Text>
+                Podlewanie:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("podlewanie1") +
+                    "x w tyg, " +
+                    "latem " +
+                    navigation.getParam("podlewanie2") +
+                    "x \n"}
+                </Text>
+                Iluletnia:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("iluLetnia") + "\n"}
+                </Text>
+                Doniczka:{" "}
+                <Text style={{ fontWeight: "bold" }}>
+                  {navigation.getParam("doniczka") + "\n"}
+                </Text>
+              </Text>
             </View>
 
-  
-            <View style={{paddingTop: 12}}> 
-            <Timeline
-          data={this.data}
-          showTime={false}
-          circleSize={10}
-          circleColor="#00513D"
-          lineColor="#00513D"
-        />
+            <View style={{ paddingTop: 12 }}>
+              {
+                <Timeline
+                  data={data}
+                  showTime={false}
+                  circleSize={10}
+                  circleColor="#00513D"
+                  lineColor="#00513D"
+                />
+              }
             </View>
           </View>
-
-
         </ScrollView>
       </View>
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   plantDescription: {

@@ -1,6 +1,8 @@
-{
-  "burak_lisciowy": {
+[
+  {
+    "id": "burak_lisciowy",
     "nazwa": "Burak Liściowy",
+    "opis": "Najlepiej siać w skrzynce, dużej donicy. Nasiona buraków liściowych sieje się od razu do gruntu. Odstępy między nasionami – 15-20 cm. Najlepiej siać nasiona pojedynczo. Jeśli buraki liściowe wzejdą zbyt gęsto, trzeba je przerwać. Głębokość siewu buraków to 2-3 cm. ",
     "doniczka": "Podłużna prostokątna doniczka, Skrzynka",
     "ileLat": "2",
     "iloscZiemi": "0",
@@ -12,8 +14,10 @@
     "terminSiewu": ["01.04", "30.05"],
     "terminZbioru": ["01.06", "30.08"]
   },
-  "bob": {
+  {
+    "id": "bob",
     "nazwa": "Bób",
+    "opis": "Siać od razu do gruntu, rzędy wyznacza się punktowo - nasiona sieje się pojedynczo co 10 cm, lub gniazdowo - po 2-3 sztuki razem co 20 cm. Głębokość siewu to 4 cm. Siewki wytrzymują przymrozki do minus 4 stopni Celsjusza. Starszy bób potrafi wytrzymać nawet minus 6 stopni Celsjusza. ",
     "doniczka": "10L",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -25,8 +29,10 @@
     "terminSiewu": ["01.03", "30.04"],
     "terminZbioru": ["01.06", "30.07"]
   },
-  "fasola_karlowata": {
+  {
+    "id": "fasola_karlowata",
     "nazwa": "Fasola Karłowata",
+    "opis": "Zalecamy odmiany tyczne, które można siać także do donic, np. na balkonie. Nasiona wysiewamy na głębokość 3-5 cm. Fasola wschodzi po 3-10 dniach, ale jeżeli ma ciepło. Nasiona fasoli najlepiej kiełkują w temperaturze od 15 stopni Celsjusza (gleby). Należy pamiętać, żeby nie przelać, ani nie przesuszyć rośliny.",
     "doniczka": "Podłużna prostokątna doniczka, Skrzynka",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -38,8 +44,10 @@
     "terminSiewu": ["01.05", "30.06"],
     "terminZbioru": ["01.07", "30.09"]
   },
-  "papryka_slodka": {
+  {
+    "id": "papryka_slodka",
     "nazwa": "Papryka Słodka (Mini Bell)",
+    "opis": "Ze względu na delikatny system korzeniowy, najlepiej uprawiać paprykę z rozsady doniczkowej. Do uprawy domowej, by móc cieszyć sie plonami na własny użytek wystarczy nam 4-5 sadzonek. Prawidłowo prowadzoną rozsadę wysadzamy w połowie maja, wcześniej hartując. Optymalne temperatury do wzrostu papryki panują wtedy, gdy temperatura powietrza w dzień wynosi 25-28 stopni C, a nocą nie jest niższa  od 16 stopni C. Papryka wymaga regularnego podlewania, nie doprowadzając do przesuszeń podłoża. Woda do podlewania powinna mieć temperaturę pokojową.",
     "doniczka": "10L",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -51,8 +59,10 @@
     "terminSiewu": ["01.03", "30.03"],
     "terminZbioru": ["01.08", "30.09"]
   },
-  "pomidor_koktajlowy": {
+  {
+    "id": "pomidor_koktajlowy",
     "nazwa": "Pomidor Koktajlowy (Black Cherry)",
+    "opis": "Osiąga około 200-250 cm, nadaje się do uprawy na balkonie. Ma wiotkie pędy, więc musi rosnąć przy podporach (palikach, kratkach). Nasiona siać na rozsadzie, Gdy pomidory Black Cherry mają około 5 cm wysokości, należy je przesadzić do pojedynczych doniczek.",
     "doniczka": "10L",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -64,8 +74,10 @@
     "terminSiewu": ["01.03", "30.04"],
     "terminZbioru": ["01.07", "30.09"]
   },
-  "rukola": {
+  {
+    "id": "rukola",
     "nazwa": "Rukola",
+    "opis": "Siew do docelowej doniczki pozostawiając ok 15 cm odstępu pomiędzy sadzonkami.  Można powtarzać siew co około miesiąc aby zapewnić sobie stały dostęp świeżych liści rukoli.",
     "doniczka": "Szeroka lub Podłużna",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -77,8 +89,10 @@
     "terminSiewu": ["01.03", "30.10"],
     "terminZbioru": ["01.04", "30.11"]
   },
-  "rzodkiew": {
+  {
+    "id": "rzodkiew",
     "nazwa": "Rzodkiew",
+    "opis": "Rzodkiewki zwykle sieje się w gruncie, ale dobrze rosną także w donicach ustawionych na balkonie czy tarasie. Rzodkiewka jest bardziej wrażliwa na przesuszenie w donicach niż w gruncie. Ziemia powinna być stale lekko wilgotna lecz nie mokra. Rzodkiewkę w donicach najwygodniej siać punktowo na głębokość około 1 cm. Patyczkiem lub palcem robi się dołek, umieszcza nasionko i zasypuje. ",
     "doniczka": "5L, wysokość 20cm",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -90,8 +104,10 @@
     "terminSiewu": ["01.03", "30.10"],
     "terminZbioru": ["01.04", "30.10"]
   },
-  "salata": {
+  {
+    "id": "salata",
     "nazwa": "Sałata",
+    "opis": "Siać od razu do gruntu, głębokość siewu to 1 cm. Gdy sałata jest gotowa do zbioru najlepiej zrywać liście na bieżąco. Może obrywać je pojedynczo albo wyrywać sałatę z korzeniami, przy okazji przerywając, jeśli została posiana za gęsto. Podlewać systematycznie, uważać żeby jej nie przelać.",
     "doniczka": "10L",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -103,4 +119,4 @@
     "terminSiewu": ["01.04", "30.06"],
     "terminZbioru": ["01.05", "30.10"]
   }
-}
+]

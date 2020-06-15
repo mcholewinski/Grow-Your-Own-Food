@@ -1,6 +1,8 @@
-{
-  "bazylia": {
+[
+  {
+    "id": "bazylia",
     "nazwa": "Bazylia",
+    "opis": "Bazylia to bardzo łatwa w uprawie roślina jednoroczna, jest ceniona głównie za swój niepowtarzalny smak i aromat, bez którego nie może obyć się większość dań kuchni włoskiej.. Osiąga do 60 cm wysokości, jest rośliną ciepłolubną.  Jej plonami możesz cieszyć się cały rok. Pamiętaj, żeby jej listki zrywać od dołu.",
     "doniczka": "12x10",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -12,8 +14,10 @@
     "terminSiewu": ["15.03", "15.05"],
     "terminZbioru": ["01.07", "30.09"]
   },
-  "czaber_ogrodowy": {
+  {
+    "id": "czaber_ogrodowy",
     "nazwa": "Cząber Ogrodowy",
+    "opis": "Uprawa cząbru ogrodowego jest łatwa, bowiem nie posiada on szczególnych wymagań co do gleby czy stanowiska. Dobrze rośnie na glebach żyznych, lżejszych, dostatecznie wilgotnych i bogatych w wapń.",
     "doniczka": "12x10",
     "ileLat": "1",
     "iloscZiemi": "0",
@@ -25,8 +29,10 @@
     "terminSiewu": ["20.03", "15.05"],
     "terminZbioru": ["01.07", "31.08"]
   },
-  "lisc_laurowy": {
+  {
+    "id": "lisc_laurowy",
     "nazwa": "Liść Laurowy",
+    "opis": "Bardzo popularna przyprawa. Można uprawiać go w donicy. Lato lubi spędzać na balkonie, a zimę w chłodnym pomieszczeniu. Osiąga do 300 m, rośnie dość wolno, jednak jego wymiar można łatwo ograniczyć cięciem, a obcięte liście zjeść. Wysiew z nasion bywa trudny, na początek zalecamy zakup sadzonek, w których korzenie pojawią się po 2-3 miesiącach od posadzenia.",
     "doniczka": "12x10",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -38,8 +44,10 @@
     "terminSiewu": ["01.10", "01.11"],
     "terminZbioru": ["01.03", "31.12"]
   },
-  "majeranek": {
+  {
+    "id": "majeranek",
     "nazwa": "Majeranek",
+    "opis": "Majeranek powinno się sadzić wiosną, kiedy już nie ma zagrożenia przymrozkami. Jest to roślina wolno rosnąca, więc dobrym pomysłem jest rozpoczęcie uprawy majeranka od przesadzenia kępki roślin z innego miejsca. Lubi miejsca nasłonecznione. Majeranek jest bardzo użytecznym ziołem, gdyż zachowuje swój smak nawet po pełnym zasuszeniu.",
     "doniczka": "12x10",
     "ileLat": "1",
     "iloscZiemi": "35",
@@ -51,8 +59,10 @@
     "terminSiewu": ["15.03", "15.04"],
     "terminZbioru": ["01.07", "31.12"]
   },
-  "melisa": {
+  {
+    "id": "melisa",
     "nazwa": "Melisa",
+    "opis": "Roślina lecznicza, gatunek byliny z rodziny jasnotowatych. Jest uprawiana na całym świecie. Kwitnie latem, wydając drobne, jasnożółte kwiaty. Liście jej bardzo przyjemnie pachną. Dorasta do 60 cm. Czasami trudno kiełkuje, można zakupić ukorzenione sadzonki. Dobrze poradzi sobie zarówno na słonecznych jak i lekko cienistych. Sporadycznie warto ją lekko przyciąć.",
     "doniczka": "15x25",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -64,8 +74,10 @@
     "terminSiewu": ["15.03", "15.04"],
     "terminZbioru": ["01.07", "30.09"]
   },
-  "mieta": {
+  {
+    "id": "mieta",
     "nazwa": "Mięta",
+    "opis": "Mięta bardzo dobrze rośnie w donicach, jednak jej nasiona wschodzą długo (maksymalnie do kilku miesięcy). Miętę sieję się nie głębiej niż 0,5 cm, najlepiej napełnić donice ziemią, rozsypać nasiona i lekko oprószyć ziemią. ",
     "doniczka": "12x10",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -77,8 +89,10 @@
     "terminSiewu": ["01.03", "30.04"],
     "terminZbioru": ["01.07", "31.12"]
   },
-  "oregano": {
+  {
+    "id": "oregano",
     "nazwa": "Oregano",
+    "opis": "Oregano jest rośliną wieloletnią, bardzo popularną w kuchni. Lubi miejsca zaciszne oraz nasłonecznione. Osiąga ok. 30 cm wysokości, zależnie od odmiany. Ma właściwości lecznicze.",
     "doniczka": "12x10",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -90,8 +104,10 @@
     "terminSiewu": ["01.03", "30.05"],
     "terminZbioru": ["01.07", "30.09"]
   },
-  "pietruszka_naciowa": {
+  {
+    "id": "pietruszka_naciowa",
     "nazwa": "Pietruszka Naciowa",
+    "opis": "Uprawa pietruszki naciowej to jeden z najlepszych sposobów na zaopatrzenie kuchni w świeżą i zdrową zieleninę. Przy wysiewie z nasion powinno się je namoczyć w wodzie przez około 12 godzin. Powinny mieć dobry dostęp do światła. Szybciej kiełkują w cieple. Pietruszka naciowa nie wymaga szczególnej opieki, należy zapewnić jej słoneczne miejsce, ewentualnie lekko zacienione.",
     "doniczka": "12x10",
     "ileLat": "2",
     "iloscZiemi": "0",
@@ -103,8 +119,10 @@
     "terminSiewu": ["01.03", "30.04"],
     "terminZbioru": ["01.05", "30.09"]
   },
-  "rozmaryn": {
+  {
+    "id": "rozmaryn",
     "nazwa": "Rozmaryn",
+    "opis": "Doskonale czuje się sadzony w donicach na tarasach i balkonach wraz z innymi roślinami lubiącymi słońce, a także w zacisznych rabatach naszego ogrodu. Lubi słońce, przez pierwszy rok od posadzenia rośnie wolno, jednak w drugim roku tempo znacznie wzrasta.",
     "doniczka": "12x10",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -116,8 +134,10 @@
     "terminSiewu": ["15.03", "15.04"],
     "terminZbioru": ["01.09", "31.12"]
   },
-  "tymianek": {
+  {
+    "id": "tymianek",
     "nazwa": "Tymianek",
+    "opis": "Roślina bardzo popularna w kuchni Europy Zachodniej oraz Bliskiego Wschodu. Choć istnieje ponad 100 odmian tymianku, tylko ogrodowy i cytrynowy sprawdzą się w kuchni. ",
     "doniczka": "12x10",
     "ileLat": "wiele",
     "iloscZiemi": "0",
@@ -129,4 +149,4 @@
     "terminSiewu": ["01.04", "30.04"],
     "terminZbioru": ["01.06", "30.09"]
   }
-}
+]
