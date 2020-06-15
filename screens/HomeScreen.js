@@ -7,7 +7,6 @@ import {
   Text,
   LayoutAnimation,
 } from "react-native";
-import FlatButton from "../shared/GreenButton.js";
 
 export default class Home extends Component {
   render() {

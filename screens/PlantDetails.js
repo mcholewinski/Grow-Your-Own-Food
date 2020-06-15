@@ -11,66 +11,80 @@ import {
   ScrollView,
 } from "react-native";
 import { globalStyles } from "../styles/global";
+import { Component } from "react";
+import Timeline from "react-native-timeline-flatlist" ;
 
-import { Card } from "native-base";
-import PlantsStateCard from "./components/PlantsStateCard";
 
-export default function PlantDetails() {
-  return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <View>
-        <View>
-          <Image
-            source={require("../assets/zestawZiołaWarzywa.jpg")}
-            style={{ height: 223, width: null }}
-          />
-        </View>
-        <View>
-          <TouchableOpacity>
+export default class PlantDetail extends Component() {
+  constructor(){
+    super()
+    this.data = [
+      {title: 'Wysiewanie', description: 'Event 1 Description'},
+      {title: 'Przesadzanie', description: 'Event 2 Description'},
+      {title: 'Nawożenie', description: 'Event 3 Description'},
+      {title: 'Zbiory!', description: 'Event 4 Description'},
+    ]
+  }
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View>
             <Image
-              style={{ height: 29, width: 45, left: 24, top: 37 }}
-              source={require("../assets/buttonIcons/backButton.png")}
-            />
-          </TouchableOpacity>
-        </View>
-        <View style={{ paddingTop: 52 }}>
-          <Text style={globalStyles.titleText}> Bazylia</Text>
-        </View>
-        <View style={{ paddingTop: 12 }}>
-          <Text style={styles.plantDescription}>
-            Bazylia jest bardzo łatwą w uprawie rośliną jednoroczną. Jej liście
-            można zbierać cały rok, należy je zrywać u spodu rośliny
-          </Text>
-        </View>
+              style={{ flex: 1, height: 223 }}
+              source={require("../assets/zestawZiołaWarzywa.jpg")}
 
-        <View style={{ paddingTop: 18 }}>
-          <Card>
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 1"
-              state="Wysiano, zbiory za ok. 20 dni"
             />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 2"
-              state="Wysiano"
-            />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 3"
-              state="Niewysiano"
-            />
-            <PlantsStateCard
-              imageUri={require("../assets/zestawZioła.jpg")}
-              name="Bazylia 4"
-              state="Wysiano"
-            />
-          </Card>
-        </View>
+          </View>
+          <View style={{ flex: 1, padding: 20 }}>
+            <View style={{ flex: 1, paddingLeft: 20, paddingTop: 20 }}>
+              <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
+                <Image
+                  style={{ height: 29, width: 45 }}
+                  source={require("../assets/buttonIcons/backButton.png")}
+                />
+              </TouchableOpacity>
+            </View>
+            <View>
+              <Text style={globalStyles.titleText}>
+                Bazylia
+                </Text>
+            </View>
+            <View>
+              <Text style={globalStyles.descriptionText}>
+                OPIS ROŚLINY
+                </Text>
+            </View>
+
+            <View>
+              <Text style={globalStyles.descriptionText}> 
+              Gdzie:       {"\n"}
+              Stanowisko:  {"\n"}
+              Podlewanie:  {"\n"} {/* pogrubiony tekst */}
+              Iluletnia:   {"\n"}
+              Doniczka:     {"\n"}
+              </Text> 
+            </View>
+
+  
+            <View style={{paddingTop: 12}}> 
+            <Timeline
+          data={this.data}
+          showTime={false}
+          circleSize={10}
+          circleColor="#00513D"
+          lineColor="#00513D"
+        />
+            </View>
+          </View>
+
+
+        </ScrollView>
       </View>
-    </ScrollView>
-  );
+    );
+  }
 }
+
 
 const styles = StyleSheet.create({
   plantDescription: {
